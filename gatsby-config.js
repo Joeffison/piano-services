@@ -1,7 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Piano Services`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://alvinahlgrim.gtsb.io/`
   },
-  plugins: ["gatsby-plugin-sass"]
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sass",
+    "gatsby-plugin-sharp",
+  ]
 };
