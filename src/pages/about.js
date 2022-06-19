@@ -1,10 +1,16 @@
-import * as React from 'react'
+import * as React from "react"
 import Layout from "../components/layout/layout";
 
 const AboutPage = () => {
   return (
     <Layout pageTitle="About Me">
-      <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
+      <p>
+        As a life-long pianist, Alvin began working in a piano shop in the United States in 2003.
+        Since then, he has received training from expert piano technicians across the United States,
+        as well as technicians from Germany, Austria, Japan, and China.
+        As a result, great pride, care, and craftsmanship are a part of every job.
+        Service is gladly provided in English or in German.
+      </p>
     </Layout>
   )
 }
