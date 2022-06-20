@@ -1,18 +1,33 @@
 import * as React from "react"
-import Layout from "../components/layout/layout";
+import { graphql } from "gatsby"
+import { useTranslation } from "gatsby-plugin-react-i18next"
+
+import Layout from "../components/layout/layout"
 
 const AboutPage = () => {
+  const {t} = useTranslation()
+
   return (
     <Layout pageTitle="About Me">
       <p>
-        As a life-long pianist, Alvin began working in a piano shop in the United States in 2003.
-        Since then, he has received training from expert piano technicians across the United States,
-        as well as technicians from Germany, Austria, Japan, and China.
-        As a result, great pride, care, and craftsmanship are a part of every job.
-        Service is gladly provided in English or in German.
+        {t("intro")}
       </p>
     </Layout>
   )
 }
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
 
 export default AboutPage

@@ -1,24 +1,38 @@
 import * as React from "react"
+import { graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 import Layout from "../components/layout/layout";
 
 const IndexPage = () => {
+  const {t} = useTranslation()
+
   return (
-    <Layout pageTitle="Home Page">
+    <Layout pageTitle={t('Piano Services')}>
       <StaticImage
         alt="Alvin Ahlgrim sitting and tuning a piano"
         src="../images/alvin-main-image.jpeg"
       />
       <p>
-        As a life-long pianist, Alvin began working in a piano shop in the United States in 2003.
-        Since then, he has received training from expert piano technicians across the United States,
-        as well as technicians from Germany, Austria, Japan, and China.
-        As a result, great pride, care, and craftsmanship are a part of every job.
-        Service is gladly provided in English or in German.
+        {t("intro")}
       </p>
     </Layout>
   )
 }
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
 
 export default IndexPage;

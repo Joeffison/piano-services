@@ -1,9 +1,9 @@
 import * as React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
+import { Link, useTranslation } from "gatsby-plugin-react-i18next"
 
 import {
   container,
-  heading,
   navLinks,
   navLinkItem,
   navLinkText,
@@ -11,6 +11,8 @@ import {
 } from "./layout.module.css"
 
 const Layout = ({ pageTitle, children }) => {
+  const {t} = useTranslation()
+
   const {
     site: {
       siteMetadata: {
@@ -25,7 +27,7 @@ const Layout = ({ pageTitle, children }) => {
         }
       }
     }
-  `);
+  `)
 
   return (
     <div className={container}>
@@ -35,23 +37,22 @@ const Layout = ({ pageTitle, children }) => {
         <ul className={navLinks}>
           <li className={navLinkItem}>
             <Link className={navLinkText} to="/">
-              Home
+              {t("Home")}
             </Link>
           </li>
           <li className={navLinkItem}>
             <Link className={navLinkText} to="/about">
-              About
+              {t("About")}
             </Link>
           </li>
           <li className={navLinkItem}>
             <Link to="/blog" className={navLinkText}>
-              Blog
+              {t("Blog")}
             </Link>
           </li>
         </ul>
       </nav>
       <main>
-        <h1 className={heading}>{pageTitle}</h1>
         {children}
       </main>
     </div>

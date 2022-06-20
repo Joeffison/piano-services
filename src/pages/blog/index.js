@@ -1,5 +1,6 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import { Link } from "gatsby-plugin-react-i18next"
 
 import Layout from "../../components/layout/layout"
 
@@ -23,7 +24,16 @@ const BlogPage = ({ data }) => {
 }
 
 export const query = graphql`
-{
+query ($language: String!) {
+  locales: allLocale(filter: {language: {eq: $language}}) {
+    edges {
+      node {
+        ns
+        data
+        language
+      }
+    }
+  },
   allMdx(sort: {fields: frontmatter___date, order: DESC}) {
     nodes {
       frontmatter {
