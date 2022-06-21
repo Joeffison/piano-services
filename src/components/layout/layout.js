@@ -35,7 +35,7 @@ const Layout = ({ pageTitle, children }) => {
     <div className={container}>
       <StaticImage className={logoImage}
         alt="Alvin Ahlgrim sitting and tuning a piano"
-        src="../images/logoNoText.png"
+        src="../../images/logoNoText.png"
       />
       <title>{pageTitle} | {websiteTitle}</title>
       <header className={siteTitle}>
