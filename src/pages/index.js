@@ -4,6 +4,8 @@ import { StaticImage } from "gatsby-plugin-image"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 
 import Layout from "../components/layout/layout";
+import Services from "../components/services";
+import ContactComponent from "../components/contact"
 
 const IndexPage = () => {
   const {t} = useTranslation()
@@ -17,6 +19,8 @@ const IndexPage = () => {
       <p>
         {t("intro")}
       </p>
+      <Services></Services>
+      <ContactComponent></ContactComponent>
     </Layout>
   )
 }

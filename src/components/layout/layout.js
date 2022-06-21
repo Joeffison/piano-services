@@ -1,8 +1,10 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import { Link, useTranslation } from "gatsby-plugin-react-i18next"
 
 import {
+  logoImage,
   container,
   navLinks,
   navLinkItem,
@@ -31,8 +33,16 @@ const Layout = ({ pageTitle, children }) => {
 
   return (
     <div className={container}>
+      <StaticImage className={logoImage}
+        alt="Alvin Ahlgrim sitting and tuning a piano"
+        src="../images/logoNoText.png"
+      />
       <title>{pageTitle} | {websiteTitle}</title>
-      <header className={siteTitle}>{websiteTitle}</header>
+      <header className={siteTitle}>
+        Alvin Ahlgrim <br/>{websiteTitle}
+        <p>{t("Serving Berlin, Potsdam and surrounding area")}</p>
+        <p>{t("Piano tuner/technician")}</p>
+      </header>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
@@ -43,11 +53,6 @@ const Layout = ({ pageTitle, children }) => {
           <li className={navLinkItem}>
             <Link className={navLinkText} to="/about">
               {t("About")}
-            </Link>
-          </li>
-          <li className={navLinkItem}>
-            <Link to="/blog" className={navLinkText}>
-              {t("Blog")}
             </Link>
           </li>
         </ul>

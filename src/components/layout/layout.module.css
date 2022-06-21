@@ -1,30 +1,46 @@
 .container {
-    margin: auto;
-    max-width: 60%;
-    font-family: sans-serif;
+  margin: auto;
+  max-width: 60%;
+  font-family: sans-serif;
+}
+
+.logo-image {
+  max-width: 10rem;
+  margin-bottom: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .heading {
-    color: rebeccapurple;
+  color: rebeccapurple;
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
 }
 
 .nav-link-item {
-    padding-right: 2rem;
+  padding-right: 2rem;
 }
 
 .nav-link-text {
-    color: black;
+  color: black;
 }
 
 .site-title {
   font-size: 3rem;
   color: gray;
   font-weight: 700;
-  margin: 3rem 0;
+  margin: 0 0 3rem 0;
+  text-align: center;
+}
+
+.site-title p {
+  font-size: 1rem;
+  color: initial;
+  font-weight: initial;
+  margin: 0;
 }

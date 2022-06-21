@@ -1,5 +1,23 @@
 {
   "intro": "As a life-long pianist, Alvin began working in a piano shop in the United States in 2003. Since then, he has received training from expert piano technicians across the United States, as well as technicians from Germany, Austria, Japan, and China. As a result, great pride, care, and craftsmanship are a part of every job. Service is gladly provided in English or in German.",
-  "Hi": "Hello",
-  "Piano Services": "Piano Services"
+  "About": "About",
+  "Piano Services": "Piano Services",
+  "Serving Berlin, Potsdam and surrounding area": "Serving Berlin, Potsdam and surrounding area",
+  "Piano tuner/technician": "Piano tuner/technician",
+  "Services": "Services",
+  "Tuning": "Tuning",
+  "service_description_tuning": "Piano tuning is the precise string tension adjustment of the roughly 230 strings in the piano. Routine tuning is essential to maintaining the long-term tuning stability of any piano. A piano should be tuned at least once annually because the tuning will be altered by seasonal humidity fluctuation. If a piano has not been tuned in longer than one or two years, it may need a pitch raise in addition to the fine tuning in order for the tuning to hold properly.",
+  "Regulation": "Regulation",
+  "service_description_regulation": "Every piano has roughly 12,000 to 14,000 moving parts, depending on how they are counted. Over time, felt and leather between parts compacts, and wood warps slightly. The regulation process deals with adjusting all these moving parts. It is important to have a piano regulated periodically to keep the touch consistent and to return everything to its optimal level of functionality.",
+  "Repairs": "Repairs",
+  "service_description_repairs": "With so many small moving parts, pianos can have components that simply break or wear out over time and must be repaired or replaced.",
+  "Voicing/Intonation": "Voicing/Intonation",
+  "service_description_intonation": "Every pianist has a different preference of tone color, and every piano has its unique tone. Voicing is the art of adjusting the hammers of an individual's piano to the tone of the individual’s liking.",
+  "Assessment": "Assessment",
+  "service_description_assessment": "Whether you are wondering about purchasing a piano through the independent market, want to sell your own piano, or just wonder about the overall condition of your piano, a professional assessment is beneficial.",
+  "Additional Services": "Additional Services",
+  "service_description_additional_services": "Alvin's piano services encompass everything inside the piano, whether it be a tuning, fixing dis-functional notes or a squeaky pedal, or anything else that requires attention. Referrals for the finest local businesses in other piano services are happily given, including sales, moving, exterior repairs, and refinishing.",
+  "Contact": "Contact",
+  "service_description_contact_email": "alvin1388@msn.com",
+  "service_description_contact_phone": "+49 176 68780403"
 }

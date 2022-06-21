@@ -1,6 +1,23 @@
 {
   "intro": "Seit seiner Kindheit begeistert am Piano, begann Alvin Ahlgrim 2003 in einem Klaviergeschäft in seiner Heimatstadt Portland, Oregon, zu arbeiten. Er wurde von erfahrenen Klaviertechnikern aus den USA, Deutschland, Österreich, Japan und China ausgebildet. Daher sind Sorgfalt und Handwerkskunst wesentliche Grundlagen seiner Arbeit, auf die er stolz ist. Der Service steht sowohl auf Deutsch als auch auf Englisch zur Verfügung.",
   "About": "Über mich",
-  "Hi": "Hallo",
-  "Piano Services": "Piano-Service"
+  "Piano Services": "Piano-Service",
+  "Serving Berlin, Potsdam and surrounding area": "Berlin, Potsdam und Umgebung",
+  "Piano tuner/technician": "Klavierstimmer/Klaviertechniker",
+  "Services": "Service",
+  "Tuning": "Stimmen",
+  "service_description_tuning": "Die Klavierstimmung ist die präzise Spannungseinstellung für jede der ungefähr 230 Saiten des\nKlaviers. Routinemäßiges Stimmen ist unerlässlich, um die langfristige Stimmstabilität des Instruments\nzu erhalten. Ein Klavier sollte mindestens einmal im Jahr gestimmt werden, da sich die Stimmung\ndurch saisonale Feuchtigkeitsschwankungen verändert. Wenn ein Klavier länger als ein oder zwei Jahre\nnicht gestimmt wurde, kann zusätzlich zur Feinstimmung eine Vorstimmung erforderlich sein, damit\ndie Stimmung richtig hält.",
+  "Regulation": "Regulieren",
+  "service_description_regulation": "Jedes Klavier hat je nach Zählweise etwa 12.000 bis 14.000 bewegliche Teile. Mit der Zeit verdichten\nsich Filz und Leder zwischen den Teilen, und Holz verzieht sich leicht. Der Regulierungsprozess\nbefasst sich mit der Einstellung all dieser beweglichen Teile. Es ist wichtig, dass ein Klavier\nregelmäßig reguliert wird, um die Spielart konstant zu halten und alles wieder auf das optimale\nFunktionsniveau zu bringen.",
+  "Repairs": "Reparieren",
+  "service_description_repairs": "Bei so vielen kleinen beweglichen Teilen können Klaviere Komponenten haben, die mit der Zeit\neinfach brechen oder verschleißen und repariert oder ersetzt werden müssen.",
+  "Voicing/Intonation": "Intonation",
+  "service_description_intonation": "Jeder Pianist hat eine eigene Vorliebe für Klangfarben, und jedes Klavier hat seinen einzigartigen\nKlang. Intonieren ist die Kunst, die Hämmer des Klaviers an den Ton anzupassen, der dem Besitzer\ngefällt.",
+  "Assessment": "Inspektion",
+  "service_description_assessment": "Wenn Sie sich überlegen, ein Klavier über den freien Markt zu kaufen, Ihr eigenes Klavier verkaufen\nmöchten oder den Gesamtzustand Ihres Klaviers ermittelt haben möchten, ist eine professionelle\nBewertung von Vorteil.",
+  "Additional Services": "Zusatzleistungen",
+  "service_description_additional_services": "Alvin Ahlgrims Piano-Service umfasst alles innerhalb des Klaviers, sei es das Stimmen, das Reparieren\nvon nicht funktionierenden Teilen oder auch ein quietschendes Pedal. Empfehlungen für die besten\nlokalen Unternehmen für weitergehende Klavierservices werden gerne gegeben, einschließlich Verkauf,\nUmzug und Gehäusereparaturen.",
+  "Contact": "Kontakt",
+  "service_description_contact_email": "alvin1388@msn.com",
+  "service_description_contact_phone": "0176 68780403"
 }
