@@ -16,7 +16,7 @@ const IndexPage = () => {
         alt="Alvin Ahlgrim sitting and tuning a piano"
         src="../images/alvin-main-image.jpeg"
       />
-      <p>
+      <p id="about">
         {t("intro")}
       </p>
       <Services></Services>

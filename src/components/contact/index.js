@@ -6,7 +6,7 @@ const ContactComponent = () => {
 
   return (
     <article>
-      <h2>{t("Contact")}</h2>
+      <h2 id="contact">{t("Contact")}</h2>
 
       <p>{t("service_description_contact_email")}</p>
       <p>{t("service_description_contact_phone")}</p>
