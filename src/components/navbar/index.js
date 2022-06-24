@@ -12,21 +12,11 @@ import { languageButtonImage } from './navbar.module.css'
 
 function BasicNavbar({ websiteTitle }) {
   const {t} = useTranslation()
-  const {languages, originalPath} = useI18next();
-
-  const getLanguageFlag = (language) => {
-    let flagsPath = "../../images/"
-
-    if (language === "en") {
-      return flagsPath + "1200px-Flag_of_Germany.svg.webp"
-    }
-
-    return flagsPath + "1200px-Flag_of_Germany.svg.webp"
-  }
+  const {originalPath} = useI18next();
 
   return (
-    <Navbar bg="dark" variant="dark" expand="md">
-      <Container>
+    <Navbar bg="dark" variant="dark" expand="md" fixed="top" style={{marginBottom: "0"}}>
+      <Container style={{marginBottom: "0"}}>
         <Navbar.Brand href="#">{websiteTitle}</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

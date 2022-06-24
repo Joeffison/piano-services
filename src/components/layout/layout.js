@@ -1,6 +1,5 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { useTranslation } from "gatsby-plugin-react-i18next"
 
 import ThemeProvider from 'react-bootstrap/ThemeProvider'
 
@@ -9,8 +8,6 @@ import {
 } from "./layout.module.css"
 
 const Layout = ({ pageTitle, children }) => {
-  const {t} = useTranslation()
-
   const {
     site: {
       siteMetadata: {

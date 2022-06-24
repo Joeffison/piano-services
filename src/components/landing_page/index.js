@@ -1,6 +1,6 @@
 import * as React from 'react'
+import { graphql } from "gatsby"
 import { useTranslation } from "gatsby-plugin-react-i18next"
-import { StaticImage } from "gatsby-plugin-image"
 
 import {
   container,
@@ -9,19 +9,14 @@ import {
   landingPageContainer
 } from './landing_page.module.scss'
 
-import BasicNavbar from "../navbar";
 
 const LandingPage = ({ websiteTitle }) => {
   const {t} = useTranslation()
 
   return (
     <div className={landingPageContainer}>
-      <BasicNavbar websiteTitle={websiteTitle}/>
       <div className={container}>
-        <StaticImage className={logoImage}
-          alt="Alvin Ahlgrim sitting and tuning a piano"
-          src="../../images/logoNoText.png"
-        />
+        <div className={logoImage}/>
         <header className={siteTitle}>
           Alvin Ahlgrim <br/>{websiteTitle}
           <p>{t("Serving Berlin, Potsdam and surrounding area")}</p>

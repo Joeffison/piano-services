@@ -6,6 +6,7 @@ import LandingPage from "../components/landing_page";
 import Layout from "../components/layout/layout";
 import Services from "../components/services";
 import ContactComponent from "../components/contact"
+import BasicNavbar from "../components/navbar";
 
 const IndexPage = ({ data }) => {
   const {t} = useTranslation()
@@ -13,6 +14,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <div>
+      <BasicNavbar websiteTitle={websiteTitle}/>
       <LandingPage websiteTitle={websiteTitle}/>
       <Layout pageTitle={t('Piano Services')}>
         <p id="about">

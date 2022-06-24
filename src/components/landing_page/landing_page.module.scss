@@ -10,18 +10,23 @@
 }
 
 .container {
-  margin: 13vh auto;
+  margin: 0 auto;
   max-width: 60%;
   font-family: sans-serif;
+  padding-top: 30vh;
 }
 
 .logo-image {
-  max-width: 10rem;
+  height: 7rem;
   margin-bottom: 0;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  filter: brightness(0) invert(1);
+  background-image: url("../../images/logoNoText.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  filter: brightness(0) invert(0.9);
 }
 
 .site-title {
