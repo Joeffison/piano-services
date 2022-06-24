@@ -1,0 +1,39 @@
+.landing-page-container {
+  background: linear-gradient(
+                  rgba(0, 0, 0, 0.7),
+                  rgba(0, 0, 0, 0.7)
+  ), url("../../images/alvin-main-image.jpeg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin-bottom: 3rem;
+}
+
+.container {
+  margin: 13vh auto;
+  max-width: 60%;
+  font-family: sans-serif;
+}
+
+.logo-image {
+  max-width: 10rem;
+  margin-bottom: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: brightness(0) invert(1);
+}
+
+.site-title {
+  font-size: 3rem;
+  color: lightgray;
+  font-weight: 700;
+  margin: 0 0 3rem 0;
+  text-align: center;
+}
+
+.site-title p {
+  font-size: 1rem;
+  font-weight: initial;
+  margin: 0;
+}

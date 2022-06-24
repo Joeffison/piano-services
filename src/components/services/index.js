@@ -8,7 +8,7 @@ const Services = () => {
     <article>
       <h2 id="services">{t("Services")}</h2>
 
-      <h3 id={"tuning"}>{t("Tuning")}</h3>
+      <h3 id="services/tuning">{t("Tuning")}</h3>
       <p>{t("service_description_tuning")}</p>
 
       <h3 id="services/regulation">{t("Regulation")}</h3>

@@ -27,11 +27,10 @@ function BasicNavbar({ websiteTitle }) {
   return (
     <Navbar bg="dark" variant="dark" expand="md">
       <Container>
-        <Navbar.Brand href="#home">{websiteTitle}</Navbar.Brand>
+        <Navbar.Brand href="#">{websiteTitle}</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#">{t("Home")}</Nav.Link>
             <Nav.Link href="#about">{t("About")}</Nav.Link>
             <NavDropdown title={t("Services")} id="basic-nav-dropdown">
               <NavDropdown.Item href="#services/tuning">{t("Tuning")}</NavDropdown.Item>

@@ -1,27 +1,27 @@
 import * as React from "react"
 import { graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 
+import LandingPage from "../components/landing_page";
 import Layout from "../components/layout/layout";
 import Services from "../components/services";
 import ContactComponent from "../components/contact"
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
   const {t} = useTranslation()
+  const websiteTitle = data.site.siteMetadata.title
 
   return (
-    <Layout pageTitle={t('Piano Services')}>
-      <StaticImage
-        alt="Alvin Ahlgrim sitting and tuning a piano"
-        src="../images/alvin-main-image.jpeg"
-      />
-      <p id="about">
-        {t("intro")}
-      </p>
-      <Services></Services>
-      <ContactComponent></ContactComponent>
-    </Layout>
+    <div>
+      <LandingPage websiteTitle={websiteTitle}/>
+      <Layout pageTitle={t('Piano Services')}>
+        <p id="about">
+          {t("intro")}
+        </p>
+        <Services></Services>
+        <ContactComponent></ContactComponent>
+      </Layout>
+    </div>
   )
 }
 
@@ -34,6 +34,11 @@ export const query = graphql`
           data
           language
         }
+      }
+    },
+    site {
+      siteMetadata {
+        title
       }
     }
   }
