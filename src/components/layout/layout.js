@@ -5,7 +5,7 @@ import ThemeProvider from 'react-bootstrap/ThemeProvider'
 
 import {
   container,
-} from "./layout.module.css"
+} from "./layout.module.scss"
 
 const Layout = ({ pageTitle, children }) => {
   const {

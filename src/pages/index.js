@@ -8,6 +8,8 @@ import Services from "../components/services";
 import ContactComponent from "../components/contact"
 import BasicNavbar from "../components/navbar";
 
+import "./index.module.scss"
+
 const IndexPage = ({ data }) => {
   const {t} = useTranslation()
   const websiteTitle = data.site.siteMetadata.title

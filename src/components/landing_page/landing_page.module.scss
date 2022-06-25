@@ -2,7 +2,7 @@
   background: linear-gradient(
                   rgba(0, 0, 0, 0.7),
                   rgba(0, 0, 0, 0.7)
-  ), url("../../images/alvin-main-image.jpeg") no-repeat;
+  ), url("../../images/alvin-main-image.jpeg") no-repeat top;
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -35,6 +35,11 @@
   font-weight: 700;
   margin: 0 0 3rem 0;
   text-align: center;
+
+  /*iphone*/
+  @media only screen and (max-width: 844px) {
+    font-size: 2rem;
+  }
 }
 
 .site-title p {

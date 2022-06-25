@@ -5,7 +5,7 @@ const ContactComponent = () => {
   const { t } = useTranslation()
 
   return (
-    <article>
+    <article style={{marginTop: "4rem"}}>
       <h2 id="contact">{t("Contact")}</h2>
 
       <p>{t("service_description_contact_email")}</p>
