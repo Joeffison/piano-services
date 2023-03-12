@@ -5,6 +5,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link, useI18next, useTranslation } from "gatsby-plugin-react-i18next"
 import { StaticImage } from "gatsby-plugin-image"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLanguage } from '@fortawesome/free-solid-svg-icons'
 
 import 'bootstrap/scss/bootstrap.scss'
 
@@ -13,6 +15,8 @@ import { languageButtonImage } from './navbar.module.css'
 function BasicNavbar({ websiteTitle }) {
   const {t} = useTranslation()
   const {originalPath} = useI18next();
+  const translationButtonText = t("Change Language");
+  const translationButton = <span><FontAwesomeIcon icon={faLanguage} /> {translationButtonText}</span>;
 
   return (
     <Navbar bg="dark" variant="dark" expand="md" fixed="top" style={{marginBottom: "0"}}>
@@ -32,7 +36,7 @@ function BasicNavbar({ websiteTitle }) {
               <NavDropdown.Item href="#services/additional_services">{t("Additional Services")}</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#contact">{t("Contact")}</Nav.Link>
-            <NavDropdown title={t("Change Language")} id="basic-nav-dropdown">
+            <NavDropdown title={translationButton} id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to={originalPath} language="de">
                 <StaticImage className={languageButtonImage}
                   alt="Button to switch Language to German"

@@ -4,6 +4,7 @@ module.exports = {
     siteUrl: `https://alvinahlgrim.gtsb.io/`
   },
   plugins: [
+    "gatsby-plugin-fontawesome-css",
     "gatsby-plugin-image",
     "gatsby-plugin-mdx",
     "gatsby-plugin-sass",
