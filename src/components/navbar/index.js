@@ -33,21 +33,19 @@ function BasicNavbar({ websiteTitle }) {
             </NavDropdown>
             <Nav.Link href="#contact">{t("Contact")}</Nav.Link>
             <NavDropdown title={t("Change Language")} id="basic-nav-dropdown">
-              <NavDropdown.Item>
-                <Link to={originalPath} language="de">
-                  <StaticImage className={languageButtonImage}
-                    alt="Button to switch Language to German"
-                    src="../../images/1200px-Flag_of_Germany.svg.webp"
-                  />
-                </Link>
+              <NavDropdown.Item as={Link} to={originalPath} language="de">
+                <StaticImage className={languageButtonImage}
+                  alt="Button to switch Language to German"
+                  src="../../images/1200px-Flag_of_Germany.svg.webp"
+                />
+                <span style={{paddingLeft: '4px'}}>Deutsch</span>
               </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link to={originalPath} language="en">
-                  <StaticImage className={languageButtonImage}
-                    alt="Button to switch Language to English"
-                    src="../../images/vector-image-american-flag-accurate-american-flag-101041578.jpeg"
-                  />
-                </Link>
+              <NavDropdown.Item as={Link} to={originalPath} language="en">
+                <StaticImage className={languageButtonImage}
+                  alt="Button to switch Language to English"
+                  src="../../images/vector-image-american-flag-accurate-american-flag-101041578.jpeg"
+                />
+                <span style={{paddingLeft: '4px'}}>English</span>
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
